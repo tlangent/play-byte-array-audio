@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Razor Page</title>
+</head>
+<body>
+
+    <audio controls>
+        <source id="audioSource" type="audio/mp3" src="@($"data:{Model.ContentType};base64,{Model.Base64AudioData}")" />
+    </audio>
+    <audio controls>
+        <source src="Shabat.mp3" type="audio/mp3">
+    </audio>
+
+</body>
+</html>
